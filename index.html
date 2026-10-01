@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdminExpress – Sign In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=mail,lock,visibility_off" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="main-content" class="main-content">
+      <section class="login-section">
+        <div class="login-section__left">
+          <h1>AdminExpress</h1>
+        </div>
+
+        <div class="login-section__right">
+          <div class="login-section__content">
+            <h2>Let's <strong>Sign In</strong> 👇</h2>
+            <p class="login-section__description">
+              Hey, Enter your details to get sign in to your account.
+            </p>
+            <!-- Formulario -->
+            <form method="POST" class="login-section__form">
+              <!-- Contenedor del email -->
+              <div class="login-section__input-container">
+                <label for="email">Email</label>
+                <span class="material-symbols-outlined login-section__icon">mail</span>
+                <input type="email" id="email" name="email" placeholder="Enter Email" class="login-section__input"/>
+              </div>
+              <!-- Contenedor de la contraseña -->
+              <div class="login-section__input-container">
+                <label for="password">Password</label>
+                <span class="material-symbols-outlined login-section__icon">lock</span>
+                <input type="password" id="password" name="password" placeholder="Enter Password" class="login-section__input"/>
+                <button type="button" class="login-section__password-icon" aria-label="Mostrar contraseña">
+                  <span class="material-symbols-outlined">visibility_off</span>
+                </button>
+              </div>
+              <!-- Anchor para contraseña olvidada -->
+              <a class="login-section__forgot-password" href="#">Forgot password?</a>
+              <button type="submit" class="login-section__button">Sign In</button>
+              <!-- Registro (visible solo para el celu) -->
+              <p class="login-section__signup">
+                Don't have an account? <a href="#" class="login-section__signup-link">Sign Up</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
